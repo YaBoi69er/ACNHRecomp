@@ -114,6 +114,8 @@ const Entry kEn[] = {
     {"video.upscaler.desc", "FSR 1: sharpens the finished picture when the window is larger than it. DLSS and FSR above do this better; leave it on Linear with them."},
     {"video.framegen.fsr.needs", "AMD FSR 3 frame generation needs NVIDIA DLSS or AMD FSR anti-aliasing (it uses their motion vectors). Choose one above, or Built-in."},
     {"video.framegen.builtin.only", "Built-in frame generation guesses motion from the picture alone, for older GPUs. With NVIDIA DLSS or AMD FSR anti-aliasing on, AMD FSR 3 frame generation is offered too: sharper, and the UI is never generated."},
+    {"video.hd_text", "Sharp text"},
+    {"video.hd_text.desc", "Draws the game's text from its fonts at the internal resolution instead of magnifying the 1080p letters: crisp text at 1440p and 4K. Applies after a restart."},
     {"video.temporal", "Temporal AA"},
     {"video.temporal.desc", "Jitters the camera and blends the frames over time, before the UI: the cleanest edges and the least shimmer. AMD FSR runs FSR 4 on Radeon RX 6000 and newer with a current driver, FSR 3.1 on any other GPU. NVIDIA DLAA needs a GeForce RTX card. With Supersampling 1.5x on a 1440p screen it works on a 4K picture (like DLAA at 4K). Restart to apply."},
     {"video.temporal.off", "Off"},
