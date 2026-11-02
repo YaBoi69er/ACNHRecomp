@@ -381,7 +381,9 @@ std::vector<ConfigEntry> config_all() {
 bool config_needs_restart(const std::string& key) {
     for (const Mapping& m : kMappings)
         if (key == m.key) return m.restart;
-    return key == "game.mods" || key == "controls.glyphs" || key == "input.layout" || key == "video.preset";  // icons: read at boot
+    // icons: read at boot; video.hd_text: fonts are made at boot (games/acnh/hd_text.cpp)
+    return key == "game.mods" || key == "controls.glyphs" || key == "input.layout" || key == "video.preset" ||
+           key == "video.hd_text";
 }
 
 }  // namespace nx

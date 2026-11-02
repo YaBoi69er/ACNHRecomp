@@ -470,6 +470,7 @@ void page_video() {
     row("video.mode", nullptr, [&](float w) {
         combo("video.mode", "docked", {{"docked", console("video.render.docked")}, {"handheld", tr("video.render.handheld")}}, w);
     });
+    row("video.hd_text", "video.hd_text.desc", [&](float w) { toggle("video.hd_text", true, w); });  // games/acnh/hd_text.cpp
 
     // Anti-aliasing and upscaling: one choice of method (video.temporal for DLSS and FSR, video.antialiasing for FXAA),
     // then the picture's size (supersampling: video.antialiasing ssaa15 / ssaa2) and, with DLSS or FSR, the 3D scene's
